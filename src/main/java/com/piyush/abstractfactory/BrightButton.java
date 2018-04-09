@@ -1,6 +1,6 @@
 package com.piyush.abstractfactory;
 
-public class BrightButton implements com.nice.piyush.abstractfactory.Button {
+public class BrightButton implements Button {
     public BrightButton() {
         System.out.println("Bright Button");
     }
