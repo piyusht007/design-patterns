@@ -5,6 +5,14 @@ import org.junit.jupiter.api.Test;
 
 class PizzaTest {
     @Test
+    public void farmHouseWithoutAnyToppings() {
+        final Pizza farmHouse = new FarmHouse();
+
+        Assertions.assertEquals("FarmHouse", farmHouse.getDescription());
+        Assertions.assertEquals(Double.valueOf(350), farmHouse.cost());
+    }
+
+    @Test
     public void farmHouseWithJalapeno() {
         final Pizza farmHouse = new FarmHouse();
         final ToppingDecorator toppingDecorator = new Jalapeno(farmHouse);
