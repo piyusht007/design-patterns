@@ -1,5 +1,8 @@
 package com.piyush.creational.factory;
 
+/**
+ * Factory implemented as enum singleton
+ */
 public enum ConcreteProductFactory implements ProductFactory {
     INSTANCE;
 

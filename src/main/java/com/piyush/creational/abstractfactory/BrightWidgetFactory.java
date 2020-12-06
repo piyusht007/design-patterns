@@ -1,5 +1,8 @@
 package com.piyush.creational.abstractfactory;
 
+/**
+ * Factory implemented as enum singleton
+ */
 public enum BrightWidgetFactory implements WidgetFactory {
     INSTANCE;
 
